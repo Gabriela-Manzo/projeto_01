@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ficha de Inscrição - Home</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="https://icon-library.com/images/gym-icon/gym-icon-10.jpg" width="50"></div> 
+        <div class="title1">Academia .GetBody</div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                    <a href="/formulario" id="active">Inscrição</a>
+                    <a href="/sobre">Sobre</a>
+                </li>
+            </ul>
+        </div>      
+    </header>
+    <main>
+        <div class="geradorFormulario">
+            <form action="/formulario" method="POST">
+                <%- include('./form-slice/info-pessoal.ejs') %>
+                
+                <div class="slice">
+                    <div class="title">Informações Adicionais</div>
+                    <div class="form-info">
+                        <label for="filial">Filial Desejada:</label>
+                        <select name="filial">
+                           <option value= "" selected> Selecione </option> 
+                           
+                            <% filial.map((item) => { %>
+                                <option value="<%= item.value %>"> <%= item.lable %> </option>
+                            
+                            <% }) %>
+                        </select>
+                    </div>
+                    <div class="form-info">
+                        <label for="plano">Escolha seu plano:</label>
+                        <select name="plano">
+                            <option value="1">Selecione...</option>
+                            <% plano.map((item) => { %>
+                                <option value="<%= item.value %>"> <%= item.lable %> </option>
+                            
+                            <% }) %>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Enviar</button>
+                </div>
+
+            </form>
+            
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="icons"><i class="fa fa-instagram fa-lg"></i> | <i class="fa fa-facebook fa-lg"></i></div>
+        <div class="developed">© 2021 Dev. Gabriela Manzo</div>
+    </footer>
+    
+</body>
+</html>

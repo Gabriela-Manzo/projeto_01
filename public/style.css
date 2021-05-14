@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* BODY */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* THEME */
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=date],
+select {
+  padding: 5px;
+  border: thin #eee solid;
+  border-radius: 3px;
+  width: 97%;
+  font-size: 12px;
+  opacity: 65%;
+}
+
+input[type=radio] {
+  color: #264653;
+  font-size: 12px;
+}
+
+/* HEADER */
+header {
+  background-color: #2A9D8F;
+  display: flex;
+  flex-direction: column;
+  border: 100vh;
+  height: 130px;
+}
+header .logo {
+  opacity: 60%;
+  margin-top: 30px;
+  align-self: center;
+  margin-right: 420px;
+}
+header .title1 {
+  font-family: Copperplate, Papyrus, fantasy;
+  color: #E9C46A;
+  font-size: 1cm;
+  align-self: center;
+  margin-top: 30px;
+  position: absolute;
+}
+header .menu {
+  align-self: center;
+}
+header .menu li {
+  list-style: none;
+}
+header .menu li a {
+  text-decoration: none;
+  font-family: Copperplate, Papyrus, fantasy;
+  color: #264653;
+  border: #E9C46A solid;
+  border-width: 0 1px 0 0;
+  padding: 10px 17px 10px 12px;
+}
+header .menu li a:hover {
+  box-shadow: 0 0 11px;
+  border-radius: 10px;
+}
+header .menu li a#active {
+  color: azure;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #E2F3EF;
+  align-items: center;
+  overflow: auto;
+  flex: 1;
+}
+main .slice {
+  margin-top: 10px;
+  border: outset #D4EDE7;
+  border-width: 5px 5px;
+  border-radius: 20px;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 10px;
+  padding: 2px 0px 0px 2px;
+  box-shadow: 5px 8px #89B0AE;
+  width: 400px;
+}
+main .title {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  color: #264653;
+}
+main .form-info {
+  margin: 10px 0px 0px 5px;
+  padding-bottom: 5px;
+  padding-right: 6px;
+}
+main label {
+  font-size: 14px;
+  margin: 5px 5px 5px 0px;
+  color: #264653;
+}
+main .btn {
+  outline: none;
+  padding: 10px;
+  border: thin #89B0AE solid;
+  border-radius: 4px;
+  background-color: #89B0AE;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  margin: 5px 5px 5px 5px;
+  opacity: 90%;
+}
+
+/* FOOTER */
+footer .developed {
+  text-align: center;
+  font-weight: 200;
+  padding: 10px 0;
+  color: #264653ff;
+  font-size: 12px;
+  background-color: #E2F3EF;
+}
+footer .icons {
+  border-top: #E9C46A solid 1px;
+  text-align: center;
+  color: #264653ff;
+  padding-top: 10px;
+  background-color: #E2F3EF;
+}
+
+/* PAGES */
+/* HOME */
+.home .banner img {
+  opacity: 60%;
+  width: 650px;
+  margin-top: 40px;
+}
+
+.button {
+  outline: none;
+  padding: 10px;
+  border: thin #89B0AE solid;
+  border-radius: 20px;
+  background-color: #264653c7;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.button:hover {
+  color: #E9C46A;
+}
+
+.sobre {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.sobre .titulo {
+  color: #264653;
+  font-weight: bold;
+  background-color: #89B0AE;
+  padding: 2px 2px 2px 2px;
+  margin-right: 10px;
+  height: 20px;
+  width: 200px;
+}
+.sobre .titulo .texto {
+  padding: 14px 2px;
+  text-align: justify;
+  margin-top: 5px;
+  font-weight: normal;
+}
+.sobre .contatos {
+  color: #264653;
+  font-weight: bold;
+  background-color: #89B0AE;
+  padding: 2px 2px 2px 2px;
+  margin-right: 10px;
+  height: 20px;
+  width: 200px;
+}
+.sobre .contatos .infos {
+  padding: 0px 2px;
+  text-align: justify;
+  margin-top: 5px;
+  font-weight: normal;
+  white-space: pre-line;
+}
+.sobre .contatos .infos i {
+  align-items: center;
+}
+.sobre .horario {
+  color: #264653;
+  font-weight: bold;
+  background-color: #89B0AE;
+  padding: 2px 2px 2px 2px;
+  height: 20px;
+  width: 200px;
+}
+.sobre .horario .funcionamento {
+  padding: 0px 2px;
+  text-align: justify;
+  margin-top: 5px;
+  font-weight: normal;
+  white-space: pre-line;
+}
+
+/*# sourceMappingURL=style.css.map */
